@@ -1,0 +1,19 @@
+//globales
+
+@import "./base/normalize";
+@import "./base/variables";
+@import "./base/operaciones";
+@import "./base/bootstrap";
+@import "./base/fonts";
+@import "./base/animations";
+
+//componentes
+
+@import "./components/buttons";
+
+//layout
+
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/hero";
+@import "./layout/sections";

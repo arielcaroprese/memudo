@@ -1,0 +1,11 @@
+@keyframes textoanimado {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.texto-animado {
+    animation: textoanimado 2s;
+}

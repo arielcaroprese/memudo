@@ -1,0 +1,26 @@
+header {
+    position: -webkit-sticky; /* Safari */
+    position: sticky ;
+    top: 0;
+    z-index: 5;
+}
+
+//personalización de Bootstrap
+
+.navbar {
+    background-color: $primary-color;
+    height: 10vh;
+    padding: 0 5%;
+}
+
+.navbar-collapse {
+    flex-grow: 0;
+}
+
+.nav-link {
+    color: white;
+}
+
+.nav-link.active {
+    color: $accent_color;
+}

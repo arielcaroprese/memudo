@@ -1,0 +1,103 @@
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 24px 10%;
+    min-height: 70vh;
+    div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    &--gris {
+        background-color: #f9f9f9;
+    }
+}
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: left;
+    padding: 24px 10%;
+    min-height: 70vh;
+    div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.titulo-section {
+    flex-basis: 100%;
+    text-align: center;
+    padding-bottom: 0;
+}
+
+.seccionEmpresas {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-bottom: 24px;
+    &__img {
+        flex-basis: 15%;
+    }
+}
+
+.contacto {
+    width: 45%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 5%;
+    &__form {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        &__inputs{
+            display: inline-block;
+            margin-bottom: 8px;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 4px;
+        }
+    }
+}
+
+@media all and (max-width: 768px){
+    section {
+        min-height: 50vh;
+    }
+    .contacto {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 10vh;
+    }
+}
+
+@media all and (max-width: 480px){
+    section {
+        flex-direction: column;
+        align-content: center;
+        justify-content: space-around;
+    }
+    h2, .titulo-section{
+        padding-bottom: 32px;
+    }
+    section div {
+        flex-basis: 100%;
+        width: 100%;
+        padding: 0 24px;
+    }
+    .colapso-invertido {
+        flex-direction: column-reverse;
+    }
+}

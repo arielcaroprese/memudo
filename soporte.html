@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Soporte | MeMudo</title>
+    <meta name="description" content="Contactate con nuestro soporte mediante formulario de contacto y redes sociales">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+          <a href="index.html"
+            ><img src="img/MiSitio.png" alt="Logo-MeMudo" class="logo-header"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="funciones.html">Funciones</a>
+              <a class="nav-link" href="transportistas.html">Transportistas</a>
+              <a class="nav-link" href="soporte.html">Soporte</a>
+              <a class="nav-link" href="descargar.html">Descargar</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="portada" id="portada--soporte">
+      <div class="portada__overlay">
+        <div class="portada__textos texto-animado">
+          <h1>¿Necesitás ayuda?</h1>
+          <h2>
+            También podés contactanos al 0800 888 27435 o por nuestra redes
+            sociales
+          </h2>
+          <a href="#">
+            <img src="img/facebook.png" alt="Facebook" />
+          </a>
+          <a href="#">
+            <img src="img/instagram.png" alt="Instagram" />
+          </a>
+          <a href="#">
+            <img src="img/twitter.png" alt="Twitter" />
+          </a>
+          <a href="#">
+            <img src="img/linkedin.png" alt="Linkedin" />
+          </a>
+        </div>
+        <div class="contacto">
+          <h3>
+            Contanos en qué podemos ayudarte y nos contactaremos a la brevedad
+          </h3>
+          <form
+            action=""
+            method="post"
+            enctype="application/x-www-form-urlencoded"
+            class="contacto__form"
+          >
+            <input
+              type="text"
+              name="Nombre"
+              id="nombre"
+              placeholder="Nombre"
+              class="contacto__form__inputs"
+            />
+            <input
+              type="text"
+              name="Apellido"
+              id="apellido"
+              placeholder="Apellido"
+              class="contacto__form__inputs"
+            />
+            <input
+              type="email"
+              name="Email"
+              id="email"
+              placeholder="Email"
+              class="contacto__form__inputs"
+            />
+            <textarea
+              name="Mensaje"
+              id="mensaje"
+              placeholder="Mensaje"
+              rows="4"
+              class="contacto__form__inputs"
+            ></textarea>
+            <input type="submit" value="Enviar" class="button" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__nav">
+        <a href="funciones.html" class="footer__nav__item">Funciones</a>
+        <a href="transportistas.html" class="footer__nav__item"
+          >Transportistas</a
+        >
+        <a href="#" class="footer__nav__logo">
+          <img src="img/MiSitio2.png" alt="Misitio" />
+        </a>
+        <a href="soporte.html" class="footer__nav__item">Soporte</a>
+        <a href="descargar.html" class="footer__nav__item">Descargar</a>
+      </div>
+      <div class="footer__social">
+        <a href="#" class="footer__social--facebook">
+          <img src="img/redes/facebook.png" alt="Facebook" />
+        </a>
+        <a href="#" class="footer__social--instagram">
+          <img src="img/redes/instagram.png" alt="Instagram" />
+        </a>
+        <a href="#" class="footer__social--twitter">
+          <img src="img/redes/twitter.png" alt="Twitter" />
+        </a>
+        <a href="#" class="footer__social--linkedin">
+          <img src="img/redes/linkedin.png" alt="Linkedin" />
+        </a>
+      </div>
+      <div class="footer__copyright">
+        <p>© 2021. Desarrollado por Ariel Caroprese.</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+.portada {
+    background-position: center;
+    background-size: cover;
+    min-height: 0;
+    padding: 0;
+    &__overlay {
+        background: linear-gradient($gradient-color-one, $gradient-color-two);
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        min-height: 90vh;
+        text-align: left;
+        padding: 0 5vh;
+    }
+    &__textos {
+        width: 40%;
+        display: inline;
+        h2 {
+            color: white;
+        }
+    }
+}
+
+#portada--funciones {
+    background-image: url('../img/portadas/funciones.png');
+}
+
+#portada--transportistas {
+    background-image: url('../img/portadas/transportistas.png');
+}
+
+#portada--soporte {
+    background-image: url('../img/portadas/soporte.png');
+}
+
+#portada--descargar {
+    background-image: url('../img/portadas/descargar.png');
+}
+
+@media all and (max-width: 768px){
+    .portada {
+        &__overlay {
+            flex-direction: column;
+            justify-content: center;
+        }
+        &_textos {
+            width: 100%;
+            margin-top: 10vh;
+            margin-bottom: 10vh;
+        }
+    }
+}
+
+@media all and (max-width: 480px){
+    .portada {
+        &__overlay{
+            width: 100%;
+            padding: 0 24px;
+        }
+    }
+}

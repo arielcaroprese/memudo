@@ -1,0 +1,32 @@
+$colores-redes: (
+    facebook: #3B5998,
+    twitter: #55ACEE,
+    instagram: #6A453B,
+    linkedin: #007AB9
+);
+
+@mixin sizes($width, $height){
+    width: $width;
+    height: $height;
+}
+
+@mixin flex ($direction, $justify, $align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;    
+}
+
+@each $red, $color in $colores-redes {
+    .footer__social--#{$red} {
+        @include flex(row, center, center);
+        background-color: $color;
+        border-radius: 24px;
+        padding: 6px;
+        
+        img {
+            @include sizes("24px", "24px")
+        }
+    }
+}
+
