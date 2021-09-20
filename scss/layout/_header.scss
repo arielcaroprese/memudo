@@ -1,26 +1,42 @@
-header {
-    position: -webkit-sticky; /* Safari */
-    position: sticky ;
-    top: 0;
-    z-index: 5;
-}
-
-//personalización de Bootstrap
-
 .navbar {
     background-color: $primary-color;
-    height: 10vh;
-    padding: 0 5%;
+    padding: 20px 10%;
+}
+
+.navbar-nav {
+    align-items: center;
+    gap: 16px;
 }
 
 .navbar-collapse {
     flex-grow: 0;
 }
 
-.nav-link {
+.navbar-dark .navbar-nav .nav-link {
     color: white;
+    text-decoration: none;
+    font-size: 1.6rem;
+    width: fit-content;
 }
 
-.nav-link.active {
+.navbar-dark .navbar-nav .nav-link.active {
     color: $accent_color;
+}
+
+.navbar-dark .navbar-nav .nav-link.button {
+    padding: 8px;
+}
+
+.navbar-dark .navbar-nav .nav-link.button:hover {
+    color: $accent_color;
+}
+
+.logo {
+    max-width: 120px;
+}
+
+@media all and (max-width: 992px){
+    .navbar-collapse {
+        padding-top: 20px;
+    }
 }

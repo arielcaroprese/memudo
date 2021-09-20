@@ -12,31 +12,52 @@
         justify-content: space-between;
         min-height: 90vh;
         text-align: left;
-        padding: 0 5vh;
+        padding: 0 5vw;
+        gap: 5%;
     }
     &__textos {
-        width: 40%;
+        width: 50%;
         display: inline;
-        h2 {
+        h2, h3{
             color: white;
         }
     }
 }
 
-#portada--funciones {
-    background-image: url('../img/portadas/funciones.png');
-}
-
-#portada--transportistas {
-    background-image: url('../img/portadas/transportistas.png');
-}
-
-#portada--soporte {
-    background-image: url('../img/portadas/soporte.png');
-}
-
-#portada--descargar {
-    background-image: url('../img/portadas/descargar.png');
+.contacto {
+    width: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+    padding: 5%;
+    &__form {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        &__inputs{
+            display: inline-block;
+            margin-bottom: 8px;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 100%;
+            font-size: 16px;
+        }
+        &__inputs50{
+            display: inline-block;
+            margin-bottom: 8px;
+            padding: 8px;
+            border: 1px solid grey;
+            border-radius: 4px;
+            width: 49%;
+            font-size: 16px;
+        }
+        .button {
+            width: 100%;
+            padding: 8px 0;
+        }
+    }
 }
 
 @media all and (max-width: 768px){
@@ -44,12 +65,24 @@
         &__overlay {
             flex-direction: column;
             justify-content: center;
+            padding: 0 5%;
+            min-height: 50vh;
         }
-        &_textos {
+        &__textos {
             width: 100%;
-            margin-top: 10vh;
-            margin-bottom: 10vh;
+            margin-top: 5vh;
         }
+    }
+    .contacto {
+        width: 100%;
+        margin-top: 24px;
+        margin-bottom: 5vw;
+    }
+    #portada--soporte {
+        background-position-x: -240px;
+    }
+    #portada--transportistas {
+        background-position-x: -180px;
     }
 }
 
@@ -57,7 +90,34 @@
     .portada {
         &__overlay{
             width: 100%;
-            padding: 0 24px;
+            padding: 0 16px;
+        }
+        &__textos {
+            width: 100%;
+            text-align: center;
         }
     }
+    .contacto {
+        &__form {
+            &__inputs50{
+                width: 100%;
+            }
+        }
+    }
+}
+
+#portada--funciones {
+    background-image: url('../img/portadas/funciones.jpg');
+}
+
+#portada--transportistas {
+    background-image: url('../img/portadas/transportistas.jpg');
+}
+
+#portada--soporte {
+    background-image: url('../img/portadas/soporte.jpg');
+}
+
+#portada--descargar {
+    background-image: url('../img/portadas/descargar.jpg');
 }

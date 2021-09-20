@@ -6,6 +6,28 @@
         opacity: 1;
     }
 }
+
+.lottie {
+    width: 100%;
+    height: 100%;
+}
+
 .texto-animado {
     animation: textoanimado 2s;
+}
+
+.growAnimation {
+    transition: all 200ms;
+}
+
+.growAnimation:hover {
+    transform: scale(1.1);
+}
+
+.upAnimation {
+    transition: all 200ms;
+}
+
+.upAnimation:hover {
+    transform: translateY(-4px);
 }

@@ -3,23 +3,28 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    min-height: 40vh;
+    padding: 10vh 10vw 0 10vw;
+    gap: 5vh;
     &__social {
         display: flex;
-        gap: 4px;
+        gap: 8px;
     }
     &__nav {
         border-bottom: 1px solid #8d8d8d;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
-        width: 80%;
+        width: 100%;
         padding-bottom: 10px;
+        gap: 16px;
         &__item {
             color: $primary-color;
             width: 20%;
             text-align: center;
         }
+    }
+    &__copy {
+        text-align: center;
     }
 }
 
@@ -37,4 +42,10 @@
         }
     }
 }
+}
+
+@media all and (max-width: 480px){
+    .footer__social {
+        justify-content: center;
+    }
 }

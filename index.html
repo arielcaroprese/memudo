@@ -5,8 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Organizá tu mudanza en minutos | MeMudo</title>
-    <meta name="keywords"  content="mudanzas online, fletes inline, mudanzas en línea, fletes en línea">
-    <meta name="description" content="Ahora podés organizar tu mudanzas online, de forma ágil y segura">
+    <meta
+      name="keywords"
+      content="mudanzas online, fletes inline, mudanzas en línea, fletes en línea"
+    />
+    <meta
+      name="description"
+      content="Ahora podés organizar tu mudanzas online, de forma ágil y segura"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,19 +25,18 @@
       integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
       crossorigin="anonymous"
     />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
-      crossorigin="anonymous"
-    ></script>
-    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="shortcut icon" href="img/memudo-favicon.png" />
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
-    <header>
+    <header class="sticky-top">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a href="index.html"
-            ><img src="img/MiSitio.png" alt="Logo-MeMudo" class="logo-header"
+            ><img
+              src="img/MeMudo-logoNegativo.png"
+              alt="Logo-MeMudo"
+              class="logo growAnimation"
           /></a>
           <button
             class="navbar-toggler"
@@ -45,28 +50,47 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active" aria-current="page" href="index.html"
-                >Home</a
-              >
-              <a class="nav-link" href="funciones.html">Funciones</a>
-              <a class="nav-link" href="transportistas.html">Transportistas</a>
-              <a class="nav-link" href="soporte.html">Soporte</a>
-              <a class="nav-link" href="descargar.html">Descargar</a>
-            </div>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link upAnimation active"
+                  aria-current="page"
+                  href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link upAnimation" href="funciones.html"
+                  >Funciones</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link upAnimation" href="transportistas.html"
+                  >Transportistas</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link upAnimation" href="soporte.html">Soporte</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link button growAnimation" href="descargar.html"
+                  >Descargar</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
     </header>
     <div
-      id="carouselExampleCaptions"
+      id="carouselExampleIndicators"
       class="carousel slide"
       data-bs-ride="carousel"
     >
       <div class="carousel-indicators">
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="0"
           class="active"
           aria-current="true"
@@ -74,63 +98,40 @@
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
         <button
           type="button"
-          data-bs-target="#carouselExampleCaptions"
+          data-bs-target="#carouselExampleIndicators"
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="img/portadas/home.png" class="d-block w-100" alt="..." />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Organizá tu mudanza en minutos</h1>
-            <p>
-              Podés organizar completamente tu mudanza de una forma totalmente
-              ágil y segura.
-            </p>
-          </div>
-        </div>
-        <div class="carousel-item">
           <img
-            src="img/portadas/funciones.png"
+            src="img/portadas/funciones.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Chateá con tu transportista</h1>
-            <p>
-              Ultimá los detalles del viaje con tu transportista sin abandonar
-              la plataforma. El chat interno asegura una mayor transparencia y
-              compromiso con lo pactado.
-            </p>
-          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/portadas/home.jpg" class="d-block w-100" alt="..." />
         </div>
         <div class="carousel-item">
           <img
-            src="img/portadas/descargar.png"
+            src="img/portadas/descargar.jpg"
             class="d-block w-100"
             alt="..."
           />
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Pagá de forma segura</h1>
-            <p>
-              Podés pagar con tarjetas de crédito, débito y billeteras virtuales
-              de forma rápida y totalmente segura. Los pagos no se efectuarán
-              hasta terminar tu viaje.
-            </p>
-          </div>
         </div>
       </div>
       <button
         class="carousel-control-prev"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
       >
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -139,70 +140,96 @@
       <button
         class="carousel-control-next"
         type="button"
-        data-bs-target="#carouselExampleCaptions"
+        data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
       >
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    <section class="section-gris">
-      <h2 class="titulo-section">¿Qué puedo hacer con MeMudo?</h2>
-      <div>
-        <h3>Organizar tu mudanza</h3>
-        <p>
-          Podés organizar completamente tu mudanza de una forma totalmente ágil
-          y segura.
-        </p>
-        <h3>Reservar un flete</h3>
-        <p>
-          También podés buscar un transporte para transportar objetos y muebles
-          que no podés llevar en cualquier vehículo.
-        </p>
-        <a href="funciones.html" class="button">Más información</a>
-      </div>
-      <div>
-        <img src="img/mockups/viaje.png" alt="Mockup de la pantalla de viaje" />
-      </div>
-    </section>
-    <section>
-      <div>
-        <h2>¿Sos transportista?<br />¡Sumate!</h2>
-        <a href="transportistas.html" class="button">Quiero saber más</a>
-      </div>
-      <div>
-        <img src="img/animacion.gif" alt="" />
-      </div>
-    </section>
+    <main>
+      <section class="seccion">
+        <h2 class="titulo-section">¿Qué puedo hacer con MeMudo?</h2>
+        <div>
+          <h3>Organizar tu mudanza</h3>
+          <p>
+            Podés organizar completamente tu mudanza de una forma totalmente
+            ágil y segura.
+          </p>
+          <h3>Reservar un flete</h3>
+          <p>
+            También podés buscar un transporte para transportar objetos y
+            muebles que no podés llevar en cualquier vehículo.
+          </p>
+          <a href="funciones.html" class="button growAnimation"
+            >Más información</a
+          >
+        </div>
+        <div>
+          <img
+            src="img/mockups/viaje.png"
+            alt="Mockup de la pantalla de viaje"
+          />
+        </div>
+      </section>
+      <section class="seccion seccion--gris">
+        <div>
+          <h2>¿Sos transportista?<br />¡Sumate!</h2>
+          <a href="transportistas.html" class="button growAnimation"
+            >Quiero saber más</a
+          >
+        </div>
+        <div>
+          <lottie-player
+            src="https://assets5.lottiefiles.com/packages/lf20_qn0GjJ.json"
+            background="transparent"
+            speed="1"
+            class="lottie"
+            loop
+            autoplay
+          ></lottie-player>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
       <div class="footer__nav">
-        <a href="funciones.html" class="footer__nav__item">Funciones</a>
-        <a href="transportistas.html" class="footer__nav__item"
+        <a href="funciones.html" class="footer__nav__item upAnimation"
+          >Funciones</a
+        >
+        <a href="transportistas.html" class="footer__nav__item upAnimation"
           >Transportistas</a
         >
-        <a href="#" class="footer__nav__logo">
-          <img src="img/MiSitio2.png" alt="Misitio" />
+        <a href="#" class="footer__nav__item footer__nav__logo growAnimation">
+          <img src="img/MeMudo-logo.png" alt="Misitio" class="logo" />
         </a>
-        <a href="soporte.html" class="footer__nav__item">Soporte</a>
-        <a href="descargar.html" class="footer__nav__item">Descargar</a>
+        <a href="soporte.html" class="footer__nav__item upAnimation">Soporte</a>
+        <a href="descargar.html" class="footer__nav__item upAnimation"
+          >Descargar</a
+        >
       </div>
       <div class="footer__social">
-        <a href="#" class="footer__social--facebook">
+        <a href="#" class="footer__social--facebook upAnimation">
           <img src="img/redes/facebook.png" alt="Facebook" />
         </a>
-        <a href="#" class="footer__social--instagram">
+        <a href="#" class="footer__social--instagram upAnimation">
           <img src="img/redes/instagram.png" alt="Instagram" />
         </a>
-        <a href="#" class="footer__social--twitter">
+        <a href="#" class="footer__social--twitter upAnimation">
           <img src="img/redes/twitter.png" alt="Twitter" />
         </a>
-        <a href="#" class="footer__social--linkedin">
+        <a href="#" class="footer__social--linkedin upAnimation">
           <img src="img/redes/linkedin.png" alt="Linkedin" />
         </a>
       </div>
-      <div class="footer__copyright">
+      <div class="footer__copy">
         <p>© 2021. Desarrollado por Ariel Caroprese.</p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
