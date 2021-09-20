@@ -170,7 +170,7 @@ a:hover {
   color: #FF8A20; }
 
 .logo {
-  max-width: 120px; }
+  width: 120px; }
 
 @media all and (max-width: 992px) {
   .navbar-collapse {
