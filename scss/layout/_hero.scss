@@ -21,6 +21,10 @@
         h2, h3{
             color: white;
         }
+        img {
+            max-width: 160px;
+            margin: 4px 4px 4px 4px;
+        }
     }
 }
 
@@ -65,7 +69,7 @@
         &__overlay {
             flex-direction: column;
             justify-content: center;
-            padding: 0 5%;
+            padding: 5vw 5vw;
             min-height: 50vh;
         }
         &__textos {
@@ -90,10 +94,11 @@
     .portada {
         &__overlay{
             width: 100%;
-            padding: 0 16px;
+            padding: 16px 16px;
         }
         &__textos {
             width: 100%;
+            display: column;
             text-align: center;
         }
     }

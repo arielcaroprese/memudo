@@ -236,6 +236,9 @@ a:hover {
     display: inline; }
     .portada__textos h2, .portada__textos h3 {
       color: white; }
+    .portada__textos img {
+      max-width: 160px;
+      margin: 4px 4px 4px 4px; }
 
 .contacto {
   width: 50%;
@@ -272,7 +275,7 @@ a:hover {
   .portada__overlay {
     flex-direction: column;
     justify-content: center;
-    padding: 0 5%;
+    padding: 5vw 5vw;
     min-height: 50vh; }
   .portada__textos {
     width: 100%;
@@ -289,9 +292,10 @@ a:hover {
 @media all and (max-width: 480px) {
   .portada__overlay {
     width: 100%;
-    padding: 0 16px; }
+    padding: 16px 16px; }
   .portada__textos {
     width: 100%;
+    display: column;
     text-align: center; }
   .contacto__form__inputs50 {
     width: 100%; } }
