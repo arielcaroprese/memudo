@@ -186,6 +186,8 @@ a:hover {
   .footer__social {
     display: flex;
     gap: 8px; }
+    .footer__social img {
+      width: 24px; }
   .footer__nav {
     border-bottom: 1px solid #8d8d8d;
     display: flex;
